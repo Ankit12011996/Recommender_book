@@ -1,0 +1,13 @@
+1.  The groupby function in Pandas is used to group a DataFrame by one or more columns, and then perform aggregate functions on each group.
+    It is a powerful tool for data analysis and manipulation.
+    The primary purpose of groupby is to split a DataFrame into groups based on some criteria, such as a categorical variable, and then apply a function to each group separately. 
+    The function can be an aggregation function, such as sum(), mean(), or count(), or a transformation function, such as apply(), transform(), or filter().
+
+
+2.  Use of groupby function is very usefull for data cleaning process.
+    examples_1 - sales.groupby("store").apply(lambda x: (x.last_week_sales - x.last_month_sales / 4).mean())
+    examples_2 - sales.groupby("store")[["stock_qty","price"]].mean()
+
+
+
+
